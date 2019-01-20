@@ -11,6 +11,7 @@ import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -27,10 +28,9 @@ public class FragmentHome extends Fragment {
     Context context;
     View view;
     private EditText amountEditText;
-    private String numberAsString;
-
 
     private List<Result> listResult;
+
     public FragmentHome() {
     }
 
@@ -40,6 +40,8 @@ public class FragmentHome extends Fragment {
         view = inflater.inflate(R.layout.home_fragment, container, false);
 
         context = container.getContext();
+
+        getActivity().getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_VISIBLE | WindowManager.LayoutParams.SOFT_INPUT_ADJUST_RESIZE);
         listResult = new ArrayList<>();
 
         amountEditText = view.findViewById(R.id.editText);
@@ -57,7 +59,6 @@ public class FragmentHome extends Fragment {
                     listResult.add(newResult);
                     Snackbar.make(view, newResult.toString(), Snackbar.LENGTH_LONG)
                             .setAction("Action", null).show();
-                    showOutput(numberAsString);
                 } else {
                     Snackbar.make(view, "Vul alstublieft een hoeveelheid gram in", Snackbar.LENGTH_LONG)
                             .setAction("Action", null).show();
@@ -67,7 +68,4 @@ public class FragmentHome extends Fragment {
         return view;
     }
 
-    private void showOutput(String text) {
-        Toast.makeText(context, text, Toast.LENGTH_SHORT).show();
-    }
 }

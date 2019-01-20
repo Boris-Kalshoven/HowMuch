@@ -62,11 +62,11 @@ public class FragmentExtra extends Fragment {
                 }
             }
         });
-/*
-Add a touch helper to the RecyclerView to recognize when a user swipes to delete a list entry.
-An ItemTouchHelper enables touch behavior (like swipe and move) on each ViewHolder,
-and uses callbacks to signal when a user is performing these actions.
-*/
+        /*
+        Add a touch helper to the RecyclerView to recognize when a user swipes to delete a list entry.
+        An ItemTouchHelper enables touch behavior (like swipe and move) on each ViewHolder,
+        and uses callbacks to signal when a user is performing these actions.
+        */
         ItemTouchHelper.SimpleCallback simpleItemTouchCallback =
                 new ItemTouchHelper.SimpleCallback(0, ItemTouchHelper.LEFT | ItemTouchHelper.RIGHT) {
                     @Override

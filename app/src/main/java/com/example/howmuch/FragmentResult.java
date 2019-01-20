@@ -18,6 +18,21 @@ public class FragmentResult extends Fragment {
     private RecyclerView myrecyclerview;
     private List<Result> listResult;
 
+    //aog = amount of grams
+    //aoj = amount of joints
+    private double aog2 = 2;
+    private double aoj2 = 6;
+    private double aog3 = 3;
+    private double aoj3 = 9;
+    private double aog4 = 4;
+    private double aoj4 = 12;
+    private double aog5 = 5.2;
+    private double aoj5 = 15;
+    private double aog6 = 6;
+    private double aoj6 = 18;
+    private double aog7 = 7;
+    private double aoj7 = 21;
+
 
     public FragmentResult() {
     }
@@ -38,11 +53,12 @@ public class FragmentResult extends Fragment {
         super.onCreate(savedInstanceState);
 
         listResult = new ArrayList<>();
-        listResult.add(new Result(2, 6, R.drawable.result_img));
-        listResult.add(new Result(3, 9, R.drawable.result_img));
-        listResult.add(new Result(4, 12, R.drawable.result_img));
-        listResult.add(new Result(5, 15, R.drawable.result_img));
-        listResult.add(new Result(6, 18, R.drawable.result_img));
+        listResult.add(new Result(aog2, aoj2, R.drawable.result_img));
+        listResult.add(new Result(aog3, aoj3, R.drawable.result_img));
+        listResult.add(new Result(aog6, aoj6, R.drawable.result_img));
+        listResult.add(new Result(aog4, aoj4, R.drawable.result_img));
+        listResult.add(new Result(aog7, aoj7, R.drawable.result_img));
+        listResult.add(new Result(aog5, aoj5, R.drawable.result_img));
 
 
     }
