@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">HowMuch</string>
+    <string name="calcBtn">Bereken</string>
+    <string name="informationField">Hoeveel gram heb je?</string>
+    <string name="currentGrs">Huidige aantal</string>
+    <string name="amount_result_text">Aantal Gram Placeholder</string>
+    <string name="amount_j_result_text">Aantal Joints Placeholder</string>
+    <string name="amount_result_text_shown">Aantal Gram</string>
+    <string name="amount_j_result_text_shown">Aantal Joints</string>
+    <string name="extraFeatures_hint">Voeg suggesties toe!</string>
+    <string name="voegToeSuggestie">Voeg toe</string>
+    <string name="extraInfoText">Weet jij nog suggesties voor features? Voeg ze hieronder toe! Dan kan ik kijken of het er in komt.</string>
+    <string name="infoHome">Vul hieronder het aantal gram in dat je aan marijuana hebt gehaald en de app berekent hoeveel normale joints je er van kunt draaien.</string>
+</resources>
